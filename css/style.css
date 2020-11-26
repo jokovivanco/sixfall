@@ -1,0 +1,135 @@
+body {
+	font-family: Rubik, arial, sans-serif;
+	overflow-x: hidden;
+}
+
+.navbar {
+	background-color: black;
+	transition: 1s;
+}
+
+.navbar.scroll-down {
+	background-color: black;
+	opacity: 0.7;
+}
+
+.nav-link {
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-left: 30px;
+	font-size: 15px;
+	color: white !important;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.nav-link:hover {
+	margin-bottom: -2px;
+}
+
+.nav-link:hover::after {
+	content: '';
+	border-bottom: 3px solid white;
+	display: block;
+	width: 50%;
+	margin: 0 auto;
+	border-radius: 5px;
+}
+
+.navbar-brand {
+	filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.3));
+}
+
+.jumbotron {
+	height: 600px;
+	background-attachment: fixed;
+	background-image: url(../img/bg.jpg);
+	background-size: cover;
+	position: relative;
+	background-position: 83% 100%;
+	background-repeat: no-repeat;
+}
+
+.jumbotron::before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	position: absolute;
+	bottom: 0;
+	opacity: 0.3;
+}
+
+.jumbotron .container {
+	position: relative;
+	z-index: 1;
+	margin-top: 150px;
+}
+
+.jumbotron .container .row {
+	margin-top: 30px;
+	color: white;
+}
+
+.jumbotron span {
+	font-weight: 500;
+	font-size: 20px;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.jumbotron h1 {
+	padding-top: -10px;
+	font-weight: 700;
+	font-size: 60px;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.jumbotron a {
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+	color: black;
+	margin: 0 5px;
+	background-color: white;
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+section {
+	margin-top: 120px;
+}
+
+section h1 {
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+	font-weight: 700;
+}
+
+/* About */
+.about span {
+	font-weight: 700;
+}
+
+.about .row {
+	margin-top: 100px;
+}
+
+.about h6 {
+	font-size: 18px;
+}
+
+.about p {
+	font-weight: 300;
+}
+
+/* Media Queries */
+@media (min-width: 992px) {
+
+	.navbar {
+		background-color: transparent;
+	}
+
+	.jumbotron {
+		height: 725px;
+		background-position: center 10%;
+	}
+
+}
