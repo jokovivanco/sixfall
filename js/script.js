@@ -8,9 +8,7 @@ $(window).scroll(function() {
 	}
 });
 
-const navLink = document.querySelectorAll('.nav-link');
-navLink.forEach(function(el) {
-	el.addEventListener('click', function(e) {
-		
-	})
+$(".navbar-nav a").on("click", function(e) {
+	$(".navbar").find(".active").removeClass("active");
+	$(this).addClass("active");
 })

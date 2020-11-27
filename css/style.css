@@ -22,21 +22,8 @@ body {
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
-.nav-link:hover {
-	margin-bottom: -10px;
-}
-
-.nav-link:hover::after {
-	content: '';
-	border-bottom: 3px solid white;
-	display: block;
-	width: 50%;
-	margin: 0 auto;
-	border-radius: 5px;
-}
-
-.nav-link.active {
-	color: black !important;
+.nav-link:hover, .nav-link.active {
+	color: #ffc107 !important;
 }
 
 .navbar-brand {
@@ -122,8 +109,13 @@ section h1 {
 }
 
 /* Expertise Info */
+.expertise-info {
+	background-color: #eee;
+}
+
 .expertise-info ul {
 	list-style: none;
+	width: 90%;
 }
 
 .expertise-info ul li {
@@ -154,6 +146,10 @@ section h1 {
 	color: white;
 }
 
+.info {
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
 /* Media Queries */
 @media (min-width: 992px) {
 
@@ -166,8 +162,27 @@ section h1 {
 		background-position: center 10%;
 	}
 
+	.expertise-info ul {
+		width: 100%;
+	}
+
+	.nav-link:hover {
+		color: white !important;
+		margin-bottom: -10px;
+	}
+
+	.nav-link.active {
+		margin-bottom: -10px;
+	}
+
+	.nav-link:hover::after, .nav-link.active::after {
+		content: '';
+		border-bottom: 3px solid #ffc107;
+		display: block;
+		width: 50%;
+		margin: 0 auto;
+		border-radius: 5px;
+	}
+
 }
 
-.expertise-info {
-	background-color: #eee;
-}
