@@ -23,7 +23,7 @@ body {
 }
 
 .nav-link:hover {
-	margin-bottom: -2px;
+	margin-bottom: -10px;
 }
 
 .nav-link:hover::after {
@@ -33,6 +33,10 @@ body {
 	width: 50%;
 	margin: 0 auto;
 	border-radius: 5px;
+}
+
+.nav-link.active {
+	color: black !important;
 }
 
 .navbar-brand {
@@ -95,21 +99,18 @@ body {
 }
 
 section {
-	margin-top: 120px;
+	padding: 60px 0;
 }
 
 section h1 {
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 	font-weight: 700;
+	margin-bottom: 60px;
 }
 
 /* About */
 .about span {
 	font-weight: 700;
-}
-
-.about .row {
-	margin-top: 100px;
 }
 
 .about h6 {
@@ -118,6 +119,39 @@ section h1 {
 
 .about p {
 	font-weight: 300;
+}
+
+/* Expertise Info */
+.expertise-info ul {
+	list-style: none;
+}
+
+.expertise-info ul li {
+	margin: 20px 0;
+}
+
+.expertise span{
+	font-weight: 300;
+}
+
+.info {
+	border: 0;
+	background-color: rgba(250, 250, 250, 0.7);
+}
+
+.info .card-title {
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.info i {
+	position: relative;
+	bottom: -7px;
+}
+
+.info .btn {
+	font-weight: 700;
+	color: white;
 }
 
 /* Media Queries */
@@ -132,4 +166,8 @@ section h1 {
 		background-position: center 10%;
 	}
 
+}
+
+.expertise-info {
+	background-color: #eee;
 }
