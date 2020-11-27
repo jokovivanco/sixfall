@@ -19,7 +19,7 @@ $(".nav-link").on("click", function(e) {
 
 	$('html').animate({
 		scrollTop: el.offset().top - 20
-	}, 1000);
+	}, 1000, 'easeInOutExpo');
 
 	e.preventDefault();
 });
