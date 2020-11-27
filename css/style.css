@@ -1,7 +1,6 @@
-body {
+html, body {
 	font-family: Rubik, arial, sans-serif;
 	overflow-x: hidden;
-	width: 100%;
 }
 
 .navbar {
